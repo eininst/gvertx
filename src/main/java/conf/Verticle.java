@@ -1,11 +1,11 @@
 package conf;
 
 
+import io.vertx.core.logging.Logger;
+import io.vertx.core.logging.LoggerFactory;
 import io.vertx.rxjava.core.AbstractVerticle;
 import io.vertx.rxjava.core.http.HttpServer;
 import io.vertx.rxjava.ext.web.Router;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import util.Runner;
 
 /**
@@ -30,6 +30,7 @@ public class Verticle extends AbstractVerticle {
                         putHeader("content-type", "text/html").
                         end("<html><body><h1>Hello from vert.x!</h1></body></html>")
         );
+
         HttpServer httpServer = vertx.createHttpServer();
         httpServer.requestHandler(router::accept).
                 listenObservable(port).
