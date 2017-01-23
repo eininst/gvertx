@@ -1,11 +1,11 @@
 package conf;
 
 
-import io.vertx.core.logging.Logger;
-import io.vertx.core.logging.LoggerFactory;
 import io.vertx.rxjava.core.AbstractVerticle;
 import io.vertx.rxjava.core.http.HttpServer;
 import io.vertx.rxjava.ext.web.Router;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import util.Runner;
 
 /**
