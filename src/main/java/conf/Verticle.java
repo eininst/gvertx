@@ -30,7 +30,6 @@ public class Verticle extends AbstractVerticle {
                         putHeader("content-type", "text/html").
                         end("<html><body><h1>Hello from vert.x!</h1></body></html>")
         );
-
         HttpServer httpServer = vertx.createHttpServer();
         httpServer.requestHandler(router::accept).
                 listenObservable(port).
