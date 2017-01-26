@@ -23,7 +23,6 @@ public class Verticle extends AbstractVerticle {
 
     @Override
     public void start() throws Exception {
-
         Router router = Router.router(vertx);
         router.route().handler(routingContext ->
                 routingContext.response().

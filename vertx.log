@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2017-01-23T17:01:21</date>
+  <millis>1485162081107</millis>
+  <sequence>0</sequence>
+  <logger>conf.Verticle</logger>
+  <level>INFO</level>
+  <thread>14</thread>
+  <message>Server is now listening. http://localhost:8080  Thread:Thread[vert.x-eventloop-thread-0,5,main] </message>
+</record>
+</log>
