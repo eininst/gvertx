@@ -87,7 +87,7 @@
                     <finalName>${project.artifactId}</finalName>
                     <descriptors>
                         <descriptor>src/main/assembly/distribution.xml</descriptor>
-                        <descriptor>src/main/assembly/frontdist.xml</descriptor>
+                        <!--<descriptor>src/main/assembly/frontdist.xml</descriptor>-->
                     </descriptors>
                 </configuration>
                 <executions>
